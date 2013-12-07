@@ -1,49 +1,150 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+	<head>
+		<title>Title Page</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<!-- Bootstrap CSS -->
+		<link href="css/bootstrap.min.css" rel="stylesheet" media="screen"> 
+		<link href="css/custom.css" rel="stylesheet" media="screen">
+		<link href="css/bootstrap-responsive.css" rel="stylesheet">
+	</head>
+	<body>
+		<div class="container-fluid">
+			<div class="span2">
+				<div>Brand</div>
+			</div>
+			<div class="span10">
+				<header class="visible-desktop visible-tablet">
+					<nav class="navbar navbar-default" role="navigation">
+						<!-- Brand and toggle get grouped for better mobile display -->
+						<div class="navbar-header">
+							<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+								<span class="sr-only">Toggle navigation</span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+							</button>
+							<a class="navbar-brand" href="#">Title</a>
+						</div>
+					
+						<!-- Collect the nav links, forms, and other content for toggling -->
+						<div class="collapse navbar-collapse navbar-ex1-collapse">
+							<ul class="nav navbar-nav">
+								<li class="active"><a href="#">Link</a></li>
+								<li><a href="#">Link</a></li>
+							</ul>
+							<form class="navbar-form navbar-left" role="search">
+								<div class="form-group">
+									<input type="text" class="form-control" placeholder="Search">
+								</div>
+								<button type="submit" class="btn btn-default">Submit</button>
+							</form>
+							<ul class="nav navbar-nav navbar-right">
+								<li><a href="#">Link</a></li>
+								<li class="dropdown">
+									<a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
+									<ul class="dropdown-menu">
+										<li><a href="#">Action</a></li>
+										<li><a href="#">Another action</a></li>
+										<li><a href="#">Something else here</a></li>
+										<li><a href="#">Separated link</a></li>
+									</ul>
+								</li>
+							</ul>
+						</div><!-- /.navbar-collapse -->
+					</nav>
+				</header><!-- /header -->
+			</div>
+			
+		</div>
+		<div class="container-fluid">
+			<div class="span2 visible-desktop">
+				<div>Brand</div>
+			</div>
+			<div class="span10">
+				<div id="myCarousel" class="carousel slide">
+				  <ol class="carousel-indicators">
+				    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+				    <li data-target="#myCarousel" data-slide-to="1"></li>
+				    <li data-target="#myCarousel" data-slide-to="2"></li>
+				    <li data-target="#myCarousel" data-slide-to="2"></li>
+				  </ol>
+				  <!-- Carousel items -->
+				  <div class="carousel-inner">
+				    <div class="active item">
+				    	<canvas id="myChart" width="400" height="400"></canvas>
+				    	<script src="lib/Chart.js"></script>
+				    	<script type="text/javascript">
 
-  <head>
-    <meta charset='utf-8' />
-    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
-    <meta name="description" content="Bootstrap-twitter : bootstrap-twitter" />
+				    		//Get the context of the canvas element we want to select
+							var ctx = document.getElementById("myChart").getContext("2d");
+							new Chart(ctx).Doughnut(data,options);
+							var data = [
+							{
+								value: 30,
+								color:"#F7464A"
+							},
+							{
+								value : 50,
+								color : "#E2EAE9"
+							},
+							{
+								value : 100,
+								color : "#D4CCC5"
+							},
+							{
+								value : 40,
+								color : "#949FB1"
+							},
+							{
+								value : 120,
+								color : "#4D5360"
+							}
 
-    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+						]
 
-    <title>Bootstrap-twitter</title>
-  </head>
 
-  <body>
+				    	</script>
+				    </div>
+				    <div class="item"></div>
+				    <div class="item">…</div>
+				    <div class="item">…</div>
+				  </div>
+				  <!-- Carousel nav -->
+				  <a class="carousel-control left" href="#myCarousel" data-slide="prev">&lsaquo;</a>
+				  <a class="carousel-control right" href="#myCarousel" data-slide="next">&rsaquo;</a>
+				</div>
+			</div>
+		</div>
 
-    <!-- HEADER -->
-    <div id="header_wrap" class="outer">
-        <header class="inner">
-          <a id="forkme_banner" href="https://github.com/kalburgimanjunath/bootstrap-twitter">View on GitHub</a>
-
-          <h1 id="project_title">Bootstrap-twitter</h1>
-          <h2 id="project_tagline">bootstrap-twitter</h2>
-
-            <section id="downloads">
-              <a class="zip_download_link" href="https://github.com/kalburgimanjunath/bootstrap-twitter/zipball/master">Download this project as a .zip file</a>
-              <a class="tar_download_link" href="https://github.com/kalburgimanjunath/bootstrap-twitter/tarball/master">Download this project as a tar.gz file</a>
-            </section>
-        </header>
-    </div>
-
-    <!-- MAIN CONTENT -->
-    <div id="main_content_wrap" class="outer">
-      <section id="main_content" class="inner">
-        <p>I am building this for my practice purpose.</p>
-      </section>
-    </div>
-
-    <!-- FOOTER  -->
-    <div id="footer_wrap" class="outer">
-      <footer class="inner">
-        <p class="copyright">Bootstrap-twitter maintained by <a href="https://github.com/kalburgimanjunath">kalburgimanjunath</a></p>
-        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
-      </footer>
-    </div>
-
-    
-
-  </body>
+		<div class="container-fluid">
+			<div class="span2 visible-desktop">
+				<div>Brand</div>
+			</div>
+			<div class="span10">
+				<div id="myCarousel" class="carousel slide">
+				  <ol class="carousel-indicators">
+				    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+				    <li data-target="#myCarousel" data-slide-to="1"></li>
+				    <li data-target="#myCarousel" data-slide-to="2"></li>
+				  </ol>
+				  <!-- Carousel items -->
+				  <div class="carousel-inner">
+				    <div class="active item">…</div>
+				    <div class="item">…</div>
+				    <div class="item">…</div>
+				  </div>
+				  <!-- Carousel nav -->
+				  <a class="carousel-control left" href="#myCarousel" data-slide="prev">&lsaquo;</a>
+				  <a class="carousel-control right" href="#myCarousel" data-slide="next">&rsaquo;</a>
+				</div>
+			</div>
+		</div>
+		<!-- jQuery -->
+		<script src="http://code.jquery.com/jquery.js"></script>
+		<!-- Bootstrap JavaScript -->
+		<script src="js/bootstrap.min.js"></script>
+		<script src="js/custom.js"></script>
+		<script src="lib/Chart.js"></script>
+	</body>
 </html>
